@@ -1,4 +1,4 @@
-//Functional programming
+//Functional programming example
 function getNumber(inputID) {
   const value = document.getElementById(inputID).value;
   return parseInt(value);
@@ -13,7 +13,7 @@ document.getElementById('func-btn').onclick = function handler() {
   const res = addNumbers(getNumber('input-n1'), getNumber('input-n2'));
   displaySum(res);
 };
-//Object oriented programming
+//Object oriented programming example
 class inputField {
   constructor(id) {
     this.id = id
