@@ -1,3 +1,4 @@
+//Functional programming
 function getNumber(inputID) {
   const value = document.getElementById(inputID).value;
   return parseInt(value);
