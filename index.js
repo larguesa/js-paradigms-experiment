@@ -14,27 +14,27 @@ document.getElementById('func-btn').onclick = function handler() {
   displaySum(res);
 };
 //Object oriented programming example
-class inputField {
+class InputField {
   constructor(id) {
-    this.id = id
+    this.id = id;
   }
   getNumber() {
-    const value = document.getElementById(this.id).value
-    return parseInt(value)
+    const value = document.getElementById(this.id).value;
+    return parseInt(value);
   }
 }
 class Form {
-  static outputField = document.getElementById('oo-sum-result')
+  static outputField = document.getElementById('oo-sum-result');
   static addNumbers(firstNumber, secondNumber) {
-    return firstNumber + secondNumber
+    return firstNumber + secondNumber;
   }
   static displaySum(value) {
-    this.outputField.textContent = value
+    this.outputField.textContent = value;
   }
 }
-const firstInput = new inputField('input-n1')
-const secondInput = new inputField('input-n2')
+const firstInput = new InputField('input-n1');
+const secondInput = new InputField('input-n2');
 document.getElementById('oo-btn').onclick = function handler() {
-  const res = Form.addNumbers(firstInput.getNumber(), secondInput.getNumber())
-  Form.displaySum(res)
-}
+  const res = Form.addNumbers(firstInput.getNumber(), secondInput.getNumber());
+  Form.displaySum(res);
+};
